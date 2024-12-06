@@ -7,26 +7,28 @@ Install Python 3.x in order to run Flask
 
 ```bash
 git clone https://github.com/kevquat/Steam-Recommendation-App 
+```
 
+## Install dependencies
 
-
-To install the dependencies 
-
+```bash
 pip install -r requirements.txt
+```
 
+## Running PySpark 
+If there are issues running PySpark due to environmental variables, then add the environment
 If you cannot run pyspark due to an environmental variables issues then 
 
-
-Running the app
+# Running the app
 
 python main.py
 
-Viewing the App
+## Viewing the App
+
 Go to http://127.0.0.1:5000
 
 BUILD THE REQUIREMENT FILE
 
-If you cannot run pyspark due to an environmental variables issues then 
 
 If it doesn't work then environmetal variables pyspark
 
