@@ -1,5 +1,8 @@
 # Steam Recommendation App
-Build an app that will allow users to enter his/her ID and will be recommended a list of Steam games
+The Steam Recommendation App will assist users in finding video game titles that they may like based on the preferences of similar users. 
+The user will enter their 17-digit steam ID and using the data provided by Steam API, the app will train data using PySpark. The top 10 
+recommended items will be displayed to the users. 
+
 
 ## Set Up and Installation
 
