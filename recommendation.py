@@ -84,7 +84,5 @@ class Recommendation:
     
         return game_detail(recommendations)
 
-# WRITE IN INSTRUCTION if not running set PYSPARK_PYTHON env to the python executable file
-# put the instruction for pyspark environmental variables
 
     
