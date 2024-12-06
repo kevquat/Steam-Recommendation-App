@@ -21,7 +21,7 @@ If you cannot run pyspark due to an environmental variables issues then
 
 # Running the app
 
-python main.py
+Run app.py
 
 ## Viewing the App
 
