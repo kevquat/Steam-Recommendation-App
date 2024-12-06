@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    background-color:#171A21;
+}
+
+.title {
+    padding: 50px;
+    color: lightgray;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #1B2838;
+}
+
+.prompt {
+    padding: 50px;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    padding-top: 20px;
+    padding-bottom: 200px;
+    width: 350px;
+}
+
+
+
+
+
+
+
+

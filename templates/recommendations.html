@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Recommendation </title> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/recommend-style.css') }}">
+    </head>
+
+    <body>        
+        <!-- Header with title-->
+        <div class="header">
+            <div class="title"> 
+                <h1>Recommendations for user: {{ username }} </h1>
+            </div>
+        </div>
+
+        <!-- Display list of recommended items-->
+        <div class="recommendations-list">
+            <ul>
+                <!-- Item image, name, description, and link to webiste -->
+                {% for game in recommended_games %}
+                    {% if recommended_games[game]['name'] %}
+                        <li>
+                            <img src="{{ recommended_games[game]['header_image'] }}"
+                            alt="{{ recommended_games[game]['name'] }}">
+                            
+                            <div class="info">
+                                <!-- Name of the video game title -->
+                                <p> {{ recommended_games[game]['name'] }} </p>
+                        
+                                <!-- Click to visit the steam page -->
+                                <a href="https://store.steampowered.com/app/{{game}}" target="_blank">
+                                    <button>Visit Steam Page</button>
+                                </a>
+                            </div>                          
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>
+
+

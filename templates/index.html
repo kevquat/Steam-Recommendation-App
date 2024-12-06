@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Steam Recommendation System </title> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+
+    <body>
+        <!-- Header with the logo and title-->
+        <div class="header">
+            <div class="logo"> <img src="{{ url_for('static', filename='images/steam_logo.png') }}" width="250" height="250"> </div>
+            <div class="title"> 
+                <h1> Steam  </h1>
+                <h1> Recommender</h1> 
+            </div>
+        </div>
+
+        <div class="prompt"> 
+            <h1> Enter your Steam ID: </h1>
+
+            <!-- Form will send the user input to the backend using Flask -->
+            <form action="/recommendation" method="POST">
+                <input type="text" name="steamID" id="steamID" minlength="17" maxlength="17" size="40" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+         <!-- Next steps recommend user sends the 
+          data to the back end and retrieves it using 
+          flask
+          
+          just store the name of the games and then do
+          all the processing 
+          
+          create a page with list of recommendation
+          and click to go to each individual page with
+          details about a game
+
+          finish code and write essays/slides
+          -->
+
+    </body>
+</html>
+
+
